@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* To center the content vertically */
+    margin: 0;
+    /* To remove default body margin */
+}
+
+.lode {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lode div {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin: 0 5px;
+    border-radius: 50%;
+    animation-name: lode;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+.one{
+    animation-delay: 0ms;
+}
+.two{
+    animation-delay: .5s;
+}
+.three{
+    animation-delay: 1s;
+}
+.four{
+    animation-delay: 1.5s;
+}
+.five{
+    animation-delay: 2s;
+}
+
+@keyframes lode {
+
+    to {
+        
+        transform: translateY(20px);
+    }
+}
